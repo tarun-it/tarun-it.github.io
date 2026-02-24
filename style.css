@@ -1,9 +1,12 @@
+/* ===== GLOBAL ===== */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
     color: #ffffff;
 }
+
+/* ===== HEADER ===== */
 header {
     background: linear-gradient(90deg, #667eea, #764ba2);
     padding: 40px;
@@ -13,9 +16,26 @@ header {
 
 header h1 {
     margin: 0;
-    font-size: 32px;
+    font-size: 34px;
 }
 
+.resume-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: linear-gradient(90deg, #00f5ff, #ff00ff);
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.resume-btn:hover {
+    opacity: 0.8;
+}
+
+/* ===== NAVIGATION ===== */
 nav {
     background-color: rgba(0, 0, 0, 0.4);
     padding: 12px;
@@ -35,50 +55,20 @@ nav a:hover {
     color: #ff00ff;
 }
 
-.project {
-    background: linear-gradient(145deg, #1e3c72, #2a5298);
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 12px;
-    transition: 0.3s;
-}
-
-.project:hover {
-    transform: scale(1.03);
-}
-
-
-.resume-btn {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 12px 25px;
-    background: linear-gradient(90deg, #00f5ff, #ff00ff);
-    color: #000;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 25px;
-    transition: 0.3s;
-}
-
-.resume-btn:hover {
-    opacity: 0.8;
-}
-/* Profile Image Styling */
-.about-image img {
-    width: 220px;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid #00f5ff;
-    box-shadow: 0 0 25px rgba(0, 245, 255, 0.6);
-}
-/* About Section Layout Fix */
-#about {
+/* ===== SECTIONS GLOBAL ===== */
+section {
     max-width: 1100px;
     margin: auto;
-    padding: 40px 20px;
+    padding: 60px 20px;
 }
 
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #00f5ff;
+}
+
+/* ===== ABOUT SECTION ===== */
 .about-container {
     display: flex;
     align-items: center;
@@ -100,4 +90,55 @@ nav a:hover {
     border-radius: 50%;
     border: 5px solid #00f5ff;
     box-shadow: 0 0 25px rgba(0, 245, 255, 0.6);
+}
+
+/* ===== SKILLS ===== */
+#skills ul {
+    list-style: none;
+    padding: 0;
+    max-width: 700px;
+    margin: auto;
+}
+
+#skills li {
+    background: rgba(0, 0, 0, 0.35);
+    margin-bottom: 12px;
+    padding: 12px 18px;
+    border-radius: 8px;
+}
+
+/* ===== PROJECTS ===== */
+.project {
+    background: linear-gradient(145deg, #1e3c72, #2a5298);
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 12px;
+    max-width: 750px;
+    transition: 0.3s;
+}
+
+.project:hover {
+    transform: scale(1.03);
+}
+
+/* ===== CONTACT ===== */
+#contact {
+    text-align: center;
+}
+
+#contact a {
+    color: #00f5ff;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    color: #ff00ff;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-size: 14px;
 }
